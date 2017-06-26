@@ -1,0 +1,10 @@
+{
+  "name": "csv-perser",
+  "version": "1.0.0",
+  "main": "parse.js",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parser": "^1.11.0",
+    "yamljs": "^0.3.0"
+  }
+}
