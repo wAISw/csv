@@ -1,3 +1,5 @@
+'use strict';
+
 let fs = require('fs');
 let csv = require('csv-parser');
 let YAML = require('yamljs');

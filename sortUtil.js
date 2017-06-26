@@ -5,7 +5,7 @@ sortResult = (json = [], sortCol = null, sortDirection = 'asc') => {
         return json;
     }
 
-    return json.sort(function (a, b) {
+    return json.sort((a, b) => {
         switch (sortDirection) {
             case 'asc':
                 if (a[sortCol] > b[sortCol]) {

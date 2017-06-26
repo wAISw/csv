@@ -1,5 +1,5 @@
 {
-  "name": "csv-perser",
+  "name": "csv-parser",
   "version": "1.0.0",
   "main": "parse.js",
   "license": "MIT",

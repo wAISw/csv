@@ -1,4 +1,3 @@
-// Невалидные данные исключаем из результирующей выборки
 let validators = {
     name: (data) => {
         // name: 'Koch Mühle',
@@ -20,13 +19,14 @@ let validators = {
         return urlPattern.test(data);
     }
 };
+
 validateRow = (row = {}) => {
     let rowValid = true;
     let keys = Object.keys(row);
 
     for (let i = 0; i < keys.length; i++) {
         let colName = keys[i];
-        let value = row[keys[i]];
+        let value = row[colName];
 
         if (validators[colName] && !validators[colName](value)) {
             rowValid = false;
@@ -36,4 +36,5 @@ validateRow = (row = {}) => {
 
     return rowValid;
 };
+
 module.exports = validateRow;
